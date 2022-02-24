@@ -44,8 +44,52 @@
     </table>
     <p> what was directly above this sentence is a table graph, using the table, tr, and th tags</p>
 
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p> this is a form example taken from w3schools (dont press submit, it doesnt do anything)</p>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Information:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  <p> what is above me is a fieldset, this allows more information to be placed inside the form. within this, it uses the legend tag to give it a title / caption. </p>
+  <p> in addition, many forms of input are gathered in these 2 forms.</p>
+
+  <form action="/action_page.php">
+    <label for="cars">Choose an ice cream flavor:</label>
+    <select name="cars" id="cars">
+      <option value="chocolate">chocolate</option>
+      <option value="vanilla">vanilla</option>
+      <option value="strawberry">strawberry</option>
+      <option value="mint">mint</option>
+    </select>
+  </form>
+  <p> this form above you has you select the ice cream flavor you prefer.</p>
+
+  <form action="/action_page.php">
+    <label for="w3review">review of ice cream:</label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+      ice cream is good :)
+      </textarea>
+    </form>
+    <p> this is where you would write your input on some topic or other, in this case, a review of all ice cream.</p>
 
 
-    
+
 </body>
 </html>
