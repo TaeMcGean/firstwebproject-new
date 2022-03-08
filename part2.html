@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML part 2</title>
-<style>
+    <style>
+      h1 {
+        text-decoration: underline;
+      }
 
-h1 {
-  text-decoration: underline;
-}
+      h3 {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      scr="https://www.google.com/fbx?fbx=snake_arcade"
+      title="Google snake game"
+    ></iframe>
+    <p>
+      this is what an iframe tag does, it places a website within your website
+    </p>
 
-h3 {
-  text-decoration: underline;
-}
+    <h1>Ice cream discussion</h1>
 
-</style>
-</head>
-<body>
-  <iframe scr="https://www.google.com/fbx?fbx=snake_arcade" title="Google snake game"></iframe> 
-  <p> this is what an iframe tag does, it places a website within your website</p>
+    <h3>list of 3 of my favorite ice cream flavors</h3>
+    <ul>
+      <li>mint chocolate chip</li>
+      <li>fudge brownie</li>
+      <li>cookie dough</li>
+    </ul>
+    <p>That was an ul tag, it makes an unordered list</p>
 
-
-
-<h1> Ice cream discussion </h1>
-
-<h3> list of 3 of my favorite ice cream flavors</h3>
-  <ul>
-    <li>mint chocolate chip</li>
-    <li>fudge brownie</li>
-    <li>cookie dough</li>
-  </ul>
-  <p> That was an ul tag, it makes an unordered list</p>
-
-  <ol start="1">
-    <li> mint chocolate chip</li>
-    <li> cookie dough</li>
-    <li> fudge brownie</li>
-    <li> neopolitan</li>
-  </ol>
-    <p> that was an ordered list of the flavors i like.</p>
+    <ol start="1">
+      <li>mint chocolate chip</li>
+      <li>cookie dough</li>
+      <li>fudge brownie</li>
+      <li>neopolitan</li>
+    </ol>
+    <p>that was an ordered list of the flavors i like.</p>
 
     <dl>
-        <dt> Chocolate chip cookie</dt>
-        <dd> cookie with chococlate chips inside of them</dd>
-        <dt> Oatmeal raisin cookies</dt>
-        <dd> a cookie mate with raisns inside of it</dd>
+      <dt>Chocolate chip cookie</dt>
+      <dd>cookie with chococlate chips inside of them</dd>
+      <dt>Oatmeal raisin cookies</dt>
+      <dd>a cookie mate with raisns inside of it</dd>
     </dl>
-    <p> the previous list was made using the dl tag, and each item was made of both the dt and dd tags</p>
+    <p>
+      the previous list was made using the dl tag, and each item was made of
+      both the dt and dd tags
+    </p>
 
     <table>
-        <tr>
+      <tr>
         <th>ice cream funds</th>
         <th>Savings</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$1000</td>
-        </tr>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$1000</td>
+      </tr>
     </table>
-    <p> what was directly above this sentence is a table graph, using the table, tr, and th tags</p>
+    <p>
+      what was directly above this sentence is a table graph, using the table,
+      tr, and th tags
+    </p>
 
+    <!-- This is a form asking for a first and last name, i lifted it straight from w3schools.-->
     <form action="/action_page.php" method="get">
       <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
+      <input type="text" id="fname" name="fname" /><br /><br />
       <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
-    <p> this is a form example taken from w3schools (dont press submit, it doesnt do anything)</p>
+    <p>
+      this is a form example taken from w3schools (dont press submit, it doesnt
+      do anything)
+    </p>
 
+    <!-- This is a form similar to the previous form, but instead of first and last name, it asks for email and birthday-->
     <form action="/action_page.php">
       <fieldset>
         <legend>Information:</legend>
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname" /><br /><br />
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" id="lname" name="lname" /><br /><br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email" /><br /><br />
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
-        <input type="submit" value="Submit">
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
       </fieldset>
     </form>
-  <p> what is above me is a fieldset, this allows more information to be placed inside the form. within this, it uses the legend tag to give it a title / caption. </p>
-  <p> in addition, many forms of input are gathered in these 2 forms.</p>
+    <p>
+      what is above me is a fieldset, this allows more information to be placed
+      inside the form. within this, it uses the legend tag to give it a title /
+      caption.
+    </p>
+    <p>in addition, many forms of input are gathered in these 2 forms.</p>
 
-  <form action="/action_page.php">
-    <label for="cars">Choose an ice cream flavor:</label>
-    <select name="cars" id="cars">
-      <option value="chocolate">chocolate</option>
-      <option value="vanilla">vanilla</option>
-      <option value="strawberry">strawberry</option>
-      <option value="mint">mint</option>
-    </select>
-  </form>
-  <p> this form above you has you select the ice cream flavor you prefer.</p>
+    <!-- This form asks for the user to select an option out of the given options.-->
+    <form action="/action_page.php">
+      <label for="cars">Choose an ice cream flavor:</label>
+      <select name="cars" id="cars">
+        <option value="chocolate">chocolate</option>
+        <option value="vanilla">vanilla</option>
+        <option value="strawberry">strawberry</option>
+        <option value="mint">mint</option>
+      </select>
+    </form>
+    <p>this form above you has you select the ice cream flavor you prefer.</p>
 
-  <form action="/action_page.php">
-    <label for="w3review">review of ice cream:</label>
-    <textarea id="w3review" name="w3review" rows="4" cols="50">
+    <!-- This form asks for you to give a review, using the textarea form-->
+    <form action="/action_page.php">
+      <label for="w3review">review of ice cream:</label>
+      <textarea id="w3review" name="w3review" rows="4" cols="50">
       ice cream is good :)
       </textarea>
     </form>
-    <p> this is where you would write your input on some topic or other, in this case, a review of all ice cream.</p>
+    <p>
+      this is where you would write your input on some topic or other, in this
+      case, a review of all ice cream.
+    </p>
 
-<article>
-  <header> 
-    <h1> Why did i choose to make this site?</h1>
-  </header>
-  <p> 
-    because ice cream tastes good, im not sure what the confusion is
-  </p>
-
-</article>
-
-
-
-</body>
+    <article>
+      <header>
+        <h1>Why did i choose to make this site?</h1>
+      </header>
+      <p>because ice cream tastes good, im not sure what the confusion is</p>
+    </article>
+  </body>
 </html>
